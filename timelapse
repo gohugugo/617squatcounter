@@ -1,8 +1,10 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-basePath="/home/root/Pictures/timelapse/"
+basePath="/root/Pictures/timelapse/"
 for i in {1..1000}; do
     echo "Starting cycle $i"
-    path = basePath + "pic$i"
+    path="${basePath}pic${i}"
     echo $path
+    fswebcam --no-banner ${path}
+    sleep 40
 done
