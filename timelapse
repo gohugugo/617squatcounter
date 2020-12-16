@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+basePath="/home/root/Pictures/timelapse/"
+for i in {1..1000}; do
+    echo "Starting cycle $i"
+    path = basePath + "pic$i"
+    echo $path
+done
