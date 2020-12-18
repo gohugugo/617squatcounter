@@ -1,10 +1,15 @@
 #!/bin/bash
 
-basePath="/root/Pictures/timelapse/"
-for i in {1..1000}; do
+basePath="/root/Pictures/timelapse2/"
+
+nb_pics=$1
+delay=$2
+
+for (( c=1; c<=$nb_pics; c++ )); do
     echo "Starting cycle $i"
-    path="${basePath}pic${i}"
+    date=$(date +'%Y%m%d%H%M%S%N')
+    path="${basePath}pic${date}.jpg"
     echo $path
     fswebcam --no-banner ${path}
-    sleep 40
+    sleep $delay
 done
