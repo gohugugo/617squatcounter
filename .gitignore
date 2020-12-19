@@ -2,3 +2,11 @@
 .idea/
 
 .DS_Store
+
+machine_learning/timelapse/
+
+machine_learning/.python-version
+
+machine_learning/.ipynb_checkpoints/
+
+machine_learning/labels.csv
