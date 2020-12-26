@@ -15,6 +15,11 @@ npm run serve
 npm run build
 ```
 
+### Serve on production (with http-server)
+```
+http-server ./dist
+```
+
 ### Lints and fixes files
 ```
 npm run lint
